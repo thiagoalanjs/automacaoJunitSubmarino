@@ -1,0 +1,19 @@
+package WebSuporte;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import java.util.concurrent.TimeUnit;
+
+
+//Abrir Chrome
+public class webElementAccessNavigator {
+    public static WebDriver acessaViaChrome(){
+        System.setProperty("webdriver.chrome.driver","C:\\Users\\Santander\\IdeaProjects\\submarinowebstoreautomation\\src\\test\\WebDriverExe\\chromedriver.exe");
+        WebDriver driverNavigator = new ChromeDriver();
+        driverNavigator.manage().window().maximize();
+        driverNavigator.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+        driverNavigator.get("https://www.submarino.com.br/");
+
+     return driverNavigator;
+    }
+}
