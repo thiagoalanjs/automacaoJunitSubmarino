@@ -1,1 +1,3 @@
 # automacaoJunitSubmarino
+- Testando WebStore
+
