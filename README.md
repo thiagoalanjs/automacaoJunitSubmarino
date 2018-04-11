@@ -1,3 +1,3 @@
 # automacaoJunitSubmarino
-- Testando WebStore
+- Testando WebStore Submarino.com- Junit Java IntelliJ IDE
 
