@@ -38,6 +38,7 @@ public class validaCarrinhoDeCompras {
                 .validaRetornoDeBusca(resultadoNomeBuscaMassa)
                 .comboProdutos(selecionaStatuslistaMassa)
                 .produtoEscolhido(nomeProdutoEscolhidoMassa);
+
                 //.valorDoProduto(valorDoProdutoEspeficicacaoMassa);
 
 

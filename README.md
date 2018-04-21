@@ -1,3 +1,3 @@
 # automacaoJunitSubmarino
-- Testando WebStore Submarino.com- Junit Java IntelliJ IDE
-
+- Projeto de automação de testes com Java - JUnit, Selenium WebDriver
+- Ambiente: Linux

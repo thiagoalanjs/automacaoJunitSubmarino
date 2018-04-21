@@ -13,20 +13,20 @@ public class ElementosCarrinhoDeCompras extends BaseUrl {
         super(driverNagator);
     }
 
-    public ElementosCarrinhoDeCompras tituloPagiona(String tituloPaginaCarrinhoDeCompras){
+    public ElementosCarrinhoDeCompras tituloPagiona(String tituloPaginaCarrinhoDeCompras) {
         WebElement tituloCarrinhoDeCompras = driverNagator.findElement(By.xpath("//h2[@class='page-title col-xs-7']"));
         tituloCarrinhoDeCompras.getText();
-        Assert.assertEquals("Meu carrinho",tituloPaginaCarrinhoDeCompras);
+        Assert.assertEquals("Meu carrinho", tituloPaginaCarrinhoDeCompras);
         return this;
     }
 
     public ElementosCarrinhoDeCompras qtdProdutos(String qtdProdMassa) {
+        return this;
 
     }
 
-    public ElementosCarrinhoDeCompras calculaFrete(String cep, String valorFrete){
+    public ElementosCarrinhoDeCompras calculaFrete(String cep, String valorFrete) {
 
         return this;
     }
-
 }
