@@ -1,4 +1,6 @@
 package pages;
+import WebSuporte.Generator;
+import WebSuporte.Screenshot;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -36,15 +38,24 @@ public class ElementosBuscaPage extends BaseUrl {
 
         WebElement elementoProduto = driverNagator.findElement(By.xpath("//h1[@class='card-product-name' and contains(text(), '" + nomeProdutoEscolhidoMassa + "')]"));
 
-        TimeUnit.SECONDS.sleep(5);
+        //String arquivoEvidenciaBuscaPage1 = "/home/thiago/Área de Trabalho/automacaoJunitSubmarino/src/test/Evidencias/" + Generator.dataHoraDoParaArquivoTeste() + ".png";
+        //Screenshot.tirarPrintdaTela(driverNagator,arquivoEvidenciaBuscaPage1);
+
+
+        TimeUnit.SECONDS.sleep(3);
 
         //JavascriptExecutor js = (JavascriptExecutor) driverNagator;
         //js.executeScript("arguments[0].scrollIntoView();", elementoProduto);
 
-        elementoProduto.click();
+       // String arquivoEvidenciaBuscaPage2 = "/home/thiago/Área de Trabalho/automacaoJunitSubmarino/src/test/Evidencias/" + Generator.dataHoraDoParaArquivoTeste() + ".png";
+       // Screenshot.tirarPrintdaTela(driverNagator,arquivoEvidenciaBuscaPage2);
 
-        TimeUnit.SECONDS.sleep(5);
-       return new ElementosEspecificacaoProduto(driverNagator);
+        elementoProduto.click();
+        // String arquivoEvidenciaBuscaPage3 = "/home/thiago/Área de Trabalho/automacaoJunitSubmarino/src/test/Evidencias/" + Generator.dataHoraDoParaArquivoTeste() + ".png";
+        // Screenshot.tirarPrintdaTela(driverNagator,arquivoEvidenciaBuscaPage3);
+
+
+        return new ElementosEspecificacaoProduto(driverNagator);
 
     }
 }

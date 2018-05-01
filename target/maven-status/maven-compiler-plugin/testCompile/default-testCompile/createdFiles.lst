@@ -1,0 +1,9 @@
+WebSuporte/Generator.class
+pages/ElementosHomePage.class
+pages/ElementosBuscaPage.class
+WebSuporte/webElementAccessNavigator.class
+WebSuporte/Screenshot.class
+pages/ElementosCarrinhoDeCompras.class
+pages/ElementosEspecificacaoProduto.class
+pages/BaseUrl.class
+tests/validaCarrinhoDeCompras.class

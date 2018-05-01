@@ -1,6 +1,6 @@
 package tests;
 
-import WebSuporte.webElementAccessNavigator;
+import  WebSuporte.webElementAccessNavigator;
 import org.easetech.easytest.annotation.DataLoader;
 import org.easetech.easytest.annotation.Param;
 import org.easetech.easytest.runner.DataDrivenTestRunner;
@@ -13,6 +13,8 @@ import pages.ElementosBuscaPage;
 import pages.ElementosEspecificacaoProduto;
 import pages.ElementosHomePage;
 
+import java.io.IOException;
+
 @RunWith(DataDrivenTestRunner.class)
 @DataLoader(filePaths = "massaDeDadosProdutos.csv")
 
@@ -21,7 +23,11 @@ public class validaCarrinhoDeCompras {
 
     @Before
     public void setUp(){
-        driverNavigator = webElementAccessNavigator.acessaViaChrome() ;
+
+        //Utilizando a execução do Webdriver na máquina local
+        //driverNavigator = webElementAccessNavigator.acessaViaChrome() ;
+        //Utilizando a execução do Webdriver na nuvem do BrowserStack
+        driverNavigator = webElementAccessNavigator.createWebDriverStack();
     }
 
 
@@ -40,8 +46,6 @@ public class validaCarrinhoDeCompras {
                 .produtoEscolhido(nomeProdutoEscolhidoMassa);
 
                 //.valorDoProduto(valorDoProdutoEspeficicacaoMassa);
-
-
     }
 
     @After

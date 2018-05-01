@@ -1,5 +1,7 @@
 package pages;
 
+import WebSuporte.Generator;
+import WebSuporte.Screenshot;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -15,7 +17,7 @@ public class ElementosEspecificacaoProduto extends BaseUrl{
 
     public ElementosEspecificacaoProduto valorDoProduto(String valorDoProdutoEspeficicacaoMassa){
 
-         WebElement valor = driverNagator.findElement(By.xpath("//p[@class='sales-price']"));
+        WebElement valor = driverNagator.findElement(By.xpath("//p[@class='sales-price']"));
         String ValorTexto = valor.getText();
         Assert.assertEquals(valorDoProdutoEspeficicacaoMassa, ValorTexto);
 
