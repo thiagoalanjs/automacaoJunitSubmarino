@@ -4,6 +4,6 @@ node{
     }
     stage('Compile-Package'){
 	def mvnHome = tool name: 'MavenPipeline', type: 'maven'	
-	sh "${mvnHome}/bin/mvn package"	
+	sh "${mvnHome}/bin/mvn clean test"	
 	}	
 }
