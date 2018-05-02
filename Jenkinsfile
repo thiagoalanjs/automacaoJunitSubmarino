@@ -3,6 +3,7 @@ node{
 	git 'https://github.com/thiagoalanjs/automacaoJunitSubmarino.git'
     }
     stage('Compile-Package'){
-	sh 'mvn package'	
+	def mvnHome = tool name: 'MavenPipeline', type: 'maven'	
+	sh '${mvnhome}/bin/mvn package'	
 	}	
 }
