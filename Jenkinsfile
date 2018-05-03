@@ -4,6 +4,6 @@ node{
     }
     stage('Compile-Package'){
 	def mvnHome = tool name: 'MavenPipeline', type: 'maven'	
-	sh "${mvnHome}/bin/mvn clean -Dtest="tests.validaCarrinhoDeCompras" test"	
+	sh "${mvnHome}/bin/mvn clean -Dtest='tests.validaCarrinhoDeCompras' test"	
 	}	
 }
